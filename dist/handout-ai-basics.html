@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Basics for Absolute Beginners — Handout</title>
+<style>
+  :root {
+    --ink: #111;
+    --muted: #555;
+    --rule: #999;
+    --accent: #1a4f8a;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    margin: 0;
+    font-size: 11.5pt;
+    line-height: 1.45;
+  }
+  .sheet { padding: 0.55in; }
+  .brand {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 6px; margin-bottom: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .brand .kit { font-weight: bold; font-size: 10.5pt; }
+  .brand .host { font-size: 9pt; color: var(--muted); }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19pt; margin: 0 0 4px 0; line-height: 1.2;
+  }
+  h1 + .deck { font-size: 10.5pt; color: var(--muted); margin: 0 0 14px 0; }
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt; margin: 18px 0 6px 0; color: var(--accent);
+    border-bottom: 1px solid var(--rule); padding-bottom: 2px;
+  }
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt; margin: 12px 0 4px 0;
+  }
+  ul, ol { margin: 6px 0 10px 0; padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  p { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+  th, td {
+    border: 1px solid var(--rule);
+    padding: 5px 7px; text-align: left; vertical-align: top;
+    font-size: 10.5pt;
+  }
+  th { font-family: Arial, Helvetica, sans-serif; background: #eee; }
+  .say {
+    font-size: 11.5pt; margin: 8px 0 8px 0; padding: 0 0 0 0;
+  }
+  .say::before { content: "\201C\A0"; }
+  .say::after { content: "\A0\201D"; }
+  .stage {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9.5pt; color: var(--muted); font-style: italic;
+    margin: 2px 0 8px 0;
+  }
+  .callout {
+    border: 1.5px solid var(--ink); padding: 8px 10px; margin: 10px 0;
+    font-size: 10.5pt;
+  }
+  .callout strong { font-family: Arial, Helvetica, sans-serif; }
+  .time {
+    font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    font-size: 9pt; letter-spacing: 0.5px; text-transform: uppercase;
+    color: var(--accent); white-space: nowrap;
+  }
+  .signrow {
+    border-bottom: 1px solid var(--rule); height: 1.05in;
+    display: flex; justify-content: space-between;
+    font-size: 9pt; color: var(--muted); padding: 4px 6px 0 6px;
+  }
+  .checkboxes { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; }
+  .rate {
+    font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+    letter-spacing: 6px;
+  }
+  .box {
+    border: 1px solid var(--rule); border-radius: 2px;
+    height: 1.1in; margin: 6px 0 10px 0;
+  }
+  .footer {
+    border-top: 1px solid var(--rule); margin-top: 16px; padding-top: 6px;
+    font-family: Arial, Helvetica, sans-serif; font-size: 8.5pt; color: var(--muted);
+    display: flex; justify-content: space-between; gap: 12px;
+  }
+  @page { size: letter; margin: 0; }
+  @media print {
+    body { margin: 0; }
+    .sheet { padding: 0.55in; }
+    h2 { break-after: avoid; }
+    tr, .callout, .box { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+<div class="brand"><span class="kit">Free Community AI Class Kit</span><span class="host">from Asdale Dynamics, LLC &middot; dylanasdale.github.io</span></div>
+
+<h1>Handout: AI Basics for Absolute Beginners</h1>
+<p class="deck">Take this home. It has everything from the first half of class &mdash;
+no jargon, no homework, nothing to sign up for.</p>
+
+<h2>The one-paragraph version</h2>
+<p>AI chat tools are very good <em>guessers of the next word</em>. They learned from a huge pile of reading what answers usually look like. That makes them great for drafts, plans, and explanations &mdash; and it means they can sound confident while being wrong. You stay in charge: you review what it says, and you double-check anything important.</p>
+
+<h2>What AI chat tools are good at</h2>
+<ul>
+<li><strong>Drafting</strong> &mdash; emails, thank-you notes, social posts, short letters.</li>
+<li><strong>Planning</strong> &mdash; meals, trips, routines, gift lists, party checklists.</li>
+<li><strong>Explaining</strong> &mdash; a plain-English summary of a topic you&rsquo;re curious about.</li>
+<li><strong>Simplifying</strong> &mdash; rewriting something stuffy in everyday words.</li>
+<li><strong>Ideas</strong> &mdash; brainstorming when your own well is temporarily dry.</li>
+</ul>
+
+<h2>What they are NOT for</h2>
+<ul>
+<li><strong>Medical decisions</strong> &mdash; they are not a doctor. Take questions to a real clinician.</li>
+<li><strong>Legal or money decisions</strong> &mdash; they are not a lawyer or your bank. Not even close.</li>
+<li><strong>Anything requiring your private info</strong> &mdash; more on that in the safety handout.</li>
+<li><strong>Emotional crises</strong> &mdash; no chat can replace a person who loves you, or 988.</li>
+</ul>
+
+<h2>The 3-step prompt recipe</h2>
+<p>Think: <strong>role &rarr; context &rarr; ask.</strong></p>
+<ol>
+<li><strong>Role</strong> &mdash; give it a job title. <em>&ldquo;You are a patient librarian.&rdquo;</em></li>
+<li><strong>Context</strong> &mdash; the details that matter. <em>&ldquo;Cooking for two, mild spice.&rdquo;</em></li>
+<li><strong>Ask</strong> &mdash; say exactly what you want back. <em>&ldquo;Give me a 5-dinner plan as a list.&rdquo;</em></li>
+</ol>
+
+<h2>Five ready-made prompt recipes</h2>
+<ol>
+<li><strong>The planner:</strong> &ldquo;You are a friendly local guide. Plan one relaxed afternoon exploring a mid-size U.S. downtown on a budget, for someone who walks slowly and likes local history. Give me 3 stops and a rough time for each.&rdquo;</li>
+<li><strong>The writer:</strong> &ldquo;You are my polite editor. Draft a friendly 100-word thank-you note to the volunteers who helped at the library book sale. Keep it warm, not sappy.&rdquo;</li>
+<li><strong>The simplifier:</strong> &ldquo;You are a patient explainer for a total beginner. Describe what a &lsquo;cloud backup&rsquo; is using a household analogy I&rsquo;d remember. Two paragraphs, no jargon.&rdquo;</li>
+<li><strong>The nudge:</strong> &ldquo;You are a gentle coach. I keep postponing a 30-minute weekly tidy-up of my files plus one errand I&rsquo;ve been avoiding. Build me a 3-step plan for this city weekend that starts so small I&rsquo;d laugh at it.&rdquo;</li>
+<li><strong>The checker:</strong> &ldquo;You are a helpful neighbor. Here&rsquo;s a phrase I want to say at my neighborhood association meeting: [text]. Tell me in 3 bullet points how it could sound clearer without changing the meaning.&rdquo;</li>
+</ol>
+
+<h2>Ground rules you&rsquo;ll love</h2>
+<ul>
+<li><strong>No magic words needed.</strong> Talk to it like a nice new coworker.</li>
+<li><strong>The first answer is a draft.</strong> Say what&rsquo;s off and ask again; use its &ldquo;try again&rdquo; button without guilt.</li>
+<li><strong>It doesn&rsquo;t judge.</strong> Ask the question you&rsquo;ve been embarrassed to ask a person.</li>
+<li><strong>It doesn&rsquo;t remember who you are</strong> across separate chats <em>in the same way a friend might</em> &mdash; brand-new chat, clean slate. Some tools remember within a conversation; that&rsquo;s the whole memory you get.</li>
+<li><strong>If a fact really matters</strong> &mdash; a name, a number, a date, an address &mdash; peek at an official source, not just the chat&rsquo;s word for it.</li>
+</ul>
+
+<h2>Plain-English glossary</h2>
+<table>
+<thead><tr><th style="width:22%">Word</th><th>What it actually means</th></tr></thead>
+<tbody>
+<tr><td><strong>AI (artificial intelligence)</strong></td><td>A family of computer techniques where software performs tasks that used to require human judgments &mdash; like understanding text or recognizing a photo. Today&rsquo;s everyday AI is pattern-matching on steroids, not a thinking mind.</td></tr>
+<tr><td><strong>Chatbot</strong></td><td>A tool where you type to it and it types back. Like texting, except it never needs dinner.</td></tr>
+<tr><td><strong>Prompt</strong></td><td>The thing you type to it. Your half of the conversation. Better prompts = better results, guaranteed.</td></tr>
+<tr><td><strong>Large language model (LLM)</strong></td><td>The pattern-matching engine inside modern chatbots. It predicts the next word from the pattern of everything it has read.</td></tr>
+<tr><td><strong>Hallucination</strong></td><td>Tech people&rsquo;s word for &ldquo;made something up.&rdquo; The chat writes a confident answer that simply isn&rsquo;t true. Best defense: check important facts at the source.</td></tr>
+<tr><td><strong>Regenerate</strong></td><td>The &ldquo;roll the dice again&rdquo; button. A fresh answer without changing your prompt.</td></tr>
+</tbody>
+</table>
+
+<div class="footer"><span>More plain-English AI help in Dylan Asdale’s book “The Massive AI Manual”</span><span>Free Community AI Class Kit &middot; Asdale Dynamics, LLC</span></div>
+</div>
+</body>
+</html>

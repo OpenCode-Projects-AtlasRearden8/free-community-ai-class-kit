@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feedback Form — Beginner AI Class</title>
+<style>
+  :root {
+    --ink: #111;
+    --muted: #555;
+    --rule: #999;
+    --accent: #1a4f8a;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    margin: 0;
+    font-size: 11.5pt;
+    line-height: 1.45;
+  }
+  .sheet { padding: 0.55in; }
+  .brand {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 6px; margin-bottom: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .brand .kit { font-weight: bold; font-size: 10.5pt; }
+  .brand .host { font-size: 9pt; color: var(--muted); }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19pt; margin: 0 0 4px 0; line-height: 1.2;
+  }
+  h1 + .deck { font-size: 10.5pt; color: var(--muted); margin: 0 0 14px 0; }
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt; margin: 18px 0 6px 0; color: var(--accent);
+    border-bottom: 1px solid var(--rule); padding-bottom: 2px;
+  }
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt; margin: 12px 0 4px 0;
+  }
+  ul, ol { margin: 6px 0 10px 0; padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  p { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+  th, td {
+    border: 1px solid var(--rule);
+    padding: 5px 7px; text-align: left; vertical-align: top;
+    font-size: 10.5pt;
+  }
+  th { font-family: Arial, Helvetica, sans-serif; background: #eee; }
+  .say {
+    font-size: 11.5pt; margin: 8px 0 8px 0; padding: 0 0 0 0;
+  }
+  .say::before { content: "\201C\A0"; }
+  .say::after { content: "\A0\201D"; }
+  .stage {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9.5pt; color: var(--muted); font-style: italic;
+    margin: 2px 0 8px 0;
+  }
+  .callout {
+    border: 1.5px solid var(--ink); padding: 8px 10px; margin: 10px 0;
+    font-size: 10.5pt;
+  }
+  .callout strong { font-family: Arial, Helvetica, sans-serif; }
+  .time {
+    font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    font-size: 9pt; letter-spacing: 0.5px; text-transform: uppercase;
+    color: var(--accent); white-space: nowrap;
+  }
+  .signrow {
+    border-bottom: 1px solid var(--rule); height: 1.05in;
+    display: flex; justify-content: space-between;
+    font-size: 9pt; color: var(--muted); padding: 4px 6px 0 6px;
+  }
+  .checkboxes { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; }
+  .rate {
+    font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+    letter-spacing: 6px;
+  }
+  .box {
+    border: 1px solid var(--rule); border-radius: 2px;
+    height: 1.1in; margin: 6px 0 10px 0;
+  }
+  .footer {
+    border-top: 1px solid var(--rule); margin-top: 16px; padding-top: 6px;
+    font-family: Arial, Helvetica, sans-serif; font-size: 8.5pt; color: var(--muted);
+    display: flex; justify-content: space-between; gap: 12px;
+  }
+  @page { size: letter; margin: 0; }
+  @media print {
+    body { margin: 0; }
+    .sheet { padding: 0.55in; }
+    h2 { break-after: avoid; }
+    tr, .callout, .box { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+<div class="brand"><span class="kit">Free Community AI Class Kit</span><span class="host">from Asdale Dynamics, LLC &middot; dylanasdale.github.io</span></div>
+
+<h1>Feedback Form</h1>
+<p class="deck">About 4 minutes &mdash; anonymous, one line per answer is plenty.
+Your voice keeps this class free, friendly, and useful for the next group.
+Circle or check, write a word or two, done.</p>
+
+<h2 style="margin-top:8px">Class: Beginner AI for Everyday Life</h2>
+<table>
+<tbody>
+<tr><th style="width:25%">Date</th><td></td></tr>
+</tbody>
+</table>
+
+<h3>1. How clear was the class overall?</h3>
+<p class="rate">Weird &mdash; 1 &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5 &nbsp; Crystal</p>
+
+<h3>2. How was the pace? (One circle.)</h3>
+<p class="checkboxes">Too slow &nbsp;&nbsp;&nbsp; About right &nbsp;&nbsp;&nbsp; Too fast &nbsp;&nbsp;&nbsp; Mixed feelings</p>
+
+<h3>3. Did the scam-spotting segment make you feel more ready to protect yourself?</h3>
+<p class="rate">Not at all &mdash; 1 &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5 &nbsp; Very much</p>
+
+<h3>4. Was having laptop and no-laptop versions of the activities useful?</h3>
+<p class="checkboxes">Yes &nbsp;&nbsp;&nbsp; Somewhat &nbsp;&nbsp;&nbsp; No &nbsp;&nbsp;&nbsp; Not sure</p>
+
+<h3>5. Which part was the most useful? Why?</h3>
+<div class="box"></div>
+
+<h3>6. Which part could disappear next time without anyone missing it?</h3>
+<div class="box"></div>
+
+<h3>7. What one thing do you hope to try on your own this week?</h3>
+<div class="box"></div>
+
+<h3>8. What should we teach next time?</h3>
+<div class="box"></div>
+
+<h3>9. Anything else you want us to know?</h3>
+<div class="box"></div>
+
+<div class="callout"><strong>Thank you.</strong> Anonymous forms like this one have noble ancestors: they are why community classes everywhere get gently, kindly better. There is no wrong answer here either.</div>
+
+<div class="footer"><span></span><span>Asdale Dynamics, LLC</span></div>
+</div>
+</body>
+</html>

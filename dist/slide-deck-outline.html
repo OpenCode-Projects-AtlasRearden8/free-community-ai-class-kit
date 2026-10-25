@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two-Hour Beginner AI Class — Slide-Deck Outline</title>
+<style>
+  :root {
+    --ink: #111;
+    --muted: #555;
+    --rule: #999;
+    --accent: #1a4f8a;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    margin: 0;
+    font-size: 11.5pt;
+    line-height: 1.45;
+  }
+  .sheet { padding: 0.55in; }
+  .brand {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 6px; margin-bottom: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .brand .kit { font-weight: bold; font-size: 10.5pt; }
+  .brand .host { font-size: 9pt; color: var(--muted); }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19pt; margin: 0 0 4px 0; line-height: 1.2;
+  }
+  h1 + .deck { font-size: 10.5pt; color: var(--muted); margin: 0 0 14px 0; }
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt; margin: 18px 0 6px 0; color: var(--accent);
+    border-bottom: 1px solid var(--rule); padding-bottom: 2px;
+  }
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt; margin: 12px 0 4px 0;
+  }
+  ul, ol { margin: 6px 0 10px 0; padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  p { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+  th, td {
+    border: 1px solid var(--rule);
+    padding: 5px 7px; text-align: left; vertical-align: top;
+    font-size: 10.5pt;
+  }
+  th { font-family: Arial, Helvetica, sans-serif; background: #eee; }
+  .say {
+    font-size: 11.5pt; margin: 8px 0 8px 0; padding: 0 0 0 0;
+  }
+  .say::before { content: "\201C\A0"; }
+  .say::after { content: "\A0\201D"; }
+  .stage {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9.5pt; color: var(--muted); font-style: italic;
+    margin: 2px 0 8px 0;
+  }
+  .callout {
+    border: 1.5px solid var(--ink); padding: 8px 10px; margin: 10px 0;
+    font-size: 10.5pt;
+  }
+  .callout strong { font-family: Arial, Helvetica, sans-serif; }
+  .time {
+    font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    font-size: 9pt; letter-spacing: 0.5px; text-transform: uppercase;
+    color: var(--accent); white-space: nowrap;
+  }
+  .signrow {
+    border-bottom: 1px solid var(--rule); height: 1.05in;
+    display: flex; justify-content: space-between;
+    font-size: 9pt; color: var(--muted); padding: 4px 6px 0 6px;
+  }
+  .checkboxes { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; }
+  .rate {
+    font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+    letter-spacing: 6px;
+  }
+  .box {
+    border: 1px solid var(--rule); border-radius: 2px;
+    height: 1.1in; margin: 6px 0 10px 0;
+  }
+  .footer {
+    border-top: 1px solid var(--rule); margin-top: 16px; padding-top: 6px;
+    font-family: Arial, Helvetica, sans-serif; font-size: 8.5pt; color: var(--muted);
+    display: flex; justify-content: space-between; gap: 12px;
+  }
+  @page { size: letter; margin: 0; }
+  @media print {
+    body { margin: 0; }
+    .sheet { padding: 0.55in; }
+    h2 { break-after: avoid; }
+    tr, .callout, .box { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+<div class="brand"><span class="kit">Free Community AI Class Kit</span><span class="host">from Asdale Dynamics, LLC &middot; dylanasdale.github.io</span></div>
+
+<h1>Two-Hour Beginner AI Class &mdash; Slide-Deck Outline</h1>
+<p class="deck">A timed walk-through of the whole session, ready to turn into slides.
+Each row is one slide. Times are cumulative (start time plus how long the slide runs).
+Room for “live demo” slides: open a free chat assistant in your browser ahead of time.</p>
+
+<h2>The deck at a glance</h2>
+<table>
+<thead><tr><th style="width:4em">Slide</th><th style="width:5em">Clock</th><th style="width:5em">Length</th><th style="width:22%">Title</th><th>Key points</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>0:00</td><td class="time">5 min</td><td><strong>Welcome! What this is (and isn’t)</strong></td><td>Meet your facilitator; promise of plain English; roadmap: what AI is, trying it, staying safe.</td></tr>
+<tr><td>2</td><td>0:05</td><td class="time">5 min</td><td><strong>Why learn about AI now?</strong></td><td>AI is already in phones, banks, and email. Knowing how it works is like knowing how to drive, not like being a mechanic.</td></tr>
+<tr><td>3</td><td>0:10</td><td class="time">10 min</td><td><strong>What AI actually is</strong></td><td>“Smart autocomplete” trained on tons of text. It predicts likely next words — not magic, not a person, not always right.</td></tr>
+<tr><td>4</td><td>0:20</td><td class="time">5 min</td><td><strong>Meet the friendly tools</strong></td><td>Overview of free public chat assistants and what each is good at; where they live; no-cost basics.</td></tr>
+<tr><td>5</td><td>0:25</td><td class="time">5 min</td><td><strong>Your first prompt — live demo</strong></td><td>Facilitator types one prompt on screen: plan a library visit / draft a birthday email. Show the answer appearing.</td></tr>
+<tr><td>6</td><td>0:30</td><td class="time">15 min</td><td><strong>Activity 1: Try it (laptop / no-laptop)</strong></td><td>Laptop track: write a first prompt and read the reply. No-laptop track: “fix this prompt” card sort + pairs practice.</td></tr>
+<tr><td>7</td><td>0:45</td><td class="time">10 min</td><td><strong>Prompting like a friend</strong></td><td>The 3 Cs: role, context, and what to do. Give it a job title, the details that matter, and a clear ask.</td></tr>
+<tr><td>8</td><td>0:55</td><td class="time">5 min</td><td><strong>When the answer is off</strong></td><td>Try again, add detail, and “regenerate”. Never accept the first answer blindly — you’re the editor.</td></tr>
+<tr><td>9</td><td>1:00</td><td class="time">5 min</td><td><strong>Good everyday uses</strong></td><td>Writing help, meal and trip planning, learning a topic, simplifying forms, brainstorming. Note: never medical/legal/financial decisions.</td></tr>
+<tr><td>10</td><td>1:05</td><td class="time">5 min</td><td><strong>Break</strong></td><td>Stretch, water, laptop-free moment. Hand out the safety sheet as people settle back in.</td></tr>
+<tr><td>11</td><td>1:10</td><td class="time">5 min</td><td><strong>How AI messes up: “making things up”</strong></td><td>It can sound confident and be wrong. Example: a plausible-but-fake fact. Rule: big claims → double-check.</td></tr>
+<tr><td>12</td><td>1:15</td><td class="time">5 min</td><td><strong>Privacy basics</strong></td><td>Treat a chat as postcard, not a diary: names of others, account numbers, passwords — don’t type them.</td></tr>
+<tr><td>13</td><td>1:20</td><td class="time">15 min</td><td><strong>Scam-spotting segment</strong></td><td>The five red flags: urgency, odd pay requests, “act now” links, too-perfect stories, and pressure to keep it secret.</td></tr>
+<tr><td>14</td><td>1:35</td><td class="time">10 min</td><td><strong>Activity 2: Spot the scam (laptop / no-laptop)</strong></td><td>Read three messages; vote real or fake; discuss why. Laptop track can also search-verify one thing.</td></tr>
+<tr><td>15</td><td>1:45</td><td class="time">5 min</td><td><strong>Where to go next</strong></td><td>Take-home handouts, library resources, and where to find more plain-English help.</td></tr>
+<tr><td>16</td><td>1:50</td><td class="time">10 min</td><td><strong>Q&amp;A + feedback</strong></td><td>Open floor, one takeaway from each table, fill out feedback forms, thank-you.</td></tr>
+</tbody>
+</table>
+
+<h2>Setup checklist (before doors open)</h2>
+<ul>
+<li>Sign-in sheet on a clipboard by the door (print <em>sign-in-sheet.html</em>).</li>
+<li>Handouts stacked: <em>handout-ai-basics.html</em> and <em>handout-safety.html</em>, one each per person.</li>
+<li>Feedback forms at every seat (print <em>feedback-form.html</em>).</li>
+<li>Projector working; a demo chat already open and named something ordinary, like “plan a monthly grocery list.”</li>
+<li>Print <em>activities.html</em> for yourself; cut the scam cards if using the printer-safe card version.</li>
+<li>Water for your voice. Two hours of friendly talking is real exercise.</li>
+</ul>
+
+<div class="callout"><strong>Timing tip:</strong> Activities 1 and 2 are the shock absorbers. If the session runs long, trim them down before you trim the scam-spotting segment — that part is the one attendees remember and use.</div>
+
+<div class="footer"><span>More plain-English AI help in Dylan Asdale’s book “The Massive AI Manual”</span><span>Free Community AI Class Kit &middot; Asdale Dynamics, LLC</span></div>
+</div>
+</body>
+</html>

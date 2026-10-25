@@ -1,0 +1,12 @@
+{
+  "name": "free-community-ai-class-kit",
+  "version": "1.0.0",
+  "description": "Free print-ready kit for hosting a two-hour beginner AI class at a library or community center.",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/"
+  }
+}
